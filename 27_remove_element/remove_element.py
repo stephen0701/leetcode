@@ -1,5 +1,9 @@
 class Solution:
-
+    """
+    :type nums: List[int]
+    :type val: int
+    :rtype: int
+    """
     # Solution 1: Simplest Solution
     # Testcase Runtime: 70ms
     # Time Complexity: O(n)
