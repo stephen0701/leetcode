@@ -16,7 +16,7 @@ class Solution:
     # Solution 1: Convert the tree structure into a string which uses '#' to represent null.
     #             Use a counter to record all the subtree structure and append the node when the same string appears
     # Time Complexity: O(N) due to the tree traversal of all nodes. [The time for creating the string is neglected]
-    # Space Complexity: O(N) due to the resursion of dfs takes O(logN) and the size of the counter takes O(N) [the size of key in the counter is neglected]
+    # Space Complexity: O(N) due to the recursion of dfs takes O(logN) and the size of the counter takes O(N) [the size of key in the counter is neglected]
     # Testcase Runtime: 84ms
     def findDuplicateSubtrees_1(self, root):
 
@@ -39,7 +39,7 @@ class Solution:
     # Solution 2: Assign the tree structure to a unique ID, say the length of the dictionary at the moment.
     #             Use a counter to store the IDs and append the node when the same ID appears.
     # Time Complexity: O(N) due to the tree traversal of all nodes.
-    # Space Complexity: O(N) due to the resursion of dfs takes O(logN) and the size of the counter takes O(N)
+    # Space Complexity: O(N) due to the recursion of dfs takes O(logN) and the size of the counter takes O(N)
     # Testcase Runtime: 100ms
     def findDuplicateSubtrees_2(self, root):
         d = collections.defaultdict()
